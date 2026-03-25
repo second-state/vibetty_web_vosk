@@ -91,10 +91,11 @@
         let model = null;
         let audioContext = null;
 
-        // Language model paths
+        // Language model paths (relative to current page)
+        const currentPath = window.location.pathname.replace(/\/[^\/]*$/, '');
         const modelPaths = {
-            cn: 'models/vosk-model-small-cn-0.22.zip',
-            en: 'models/vosk-model-small-en-us-0.15.zip',
+            cn: currentPath + '/models/vosk-model-small-cn-0.22.zip',
+            en: currentPath + '/models/vosk-model-small-en-us-0.15.zip',
         };
 
         // Load saved URL from localStorage
