@@ -252,7 +252,7 @@
 
                     // Send result back to server
                     if (ws && ws.readyState === WebSocket.OPEN) {
-                        ws.send(JSON.stringify({ type: 'result', text: text }));
+                        ws.send(text);
                     }
                 });
 
