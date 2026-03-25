@@ -23,7 +23,7 @@
                 <div class="label">
                     <span class="label-text">WebSocket URL</span>
                 </div>
-                <input type="text" id="wsUrlInput" placeholder="ws://localhost:3000/vosk_ws"
+                <input type="text" id="wsUrlInput" value="ws://localhost:3000/vosk_ws" placeholder="ws://localhost:3000/vosk_ws"
                     class="input input-bordered w-full mb-2" />
             </label>
 
@@ -347,8 +347,8 @@
         }
 
         window.onload = () => {
-            // Auto-fill on load
-            autoBtn.click();
+            // Auto-fill on load (disabled - use HTML default)
+            // autoBtn.click();
         };
     </script>
 </body>
